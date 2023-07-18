@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('../img/wallpaper_tictactoe.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#8a2be2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Roboto', sans-serif;
+  }
+
+.tictactoe_header, .tictactoe_footer {
+  width: 100vw;
+  background-color: #bd512f;
+
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  }
+
+.col {
+  margin: 0;
+  padding: 0;
+  width: 10em;
+  height: 10em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('../img/pick-me-label.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ffffff;
+
+  cursor: pointer;
+  }
+
+.col:hover {
+  /* text-shadow: 0px 0px 2px rgba(170, 200, 255, 0.99), 0px 0px 4px rgba(140, 170, 255, 0.99); */
+
+  border-color: rgba(0, 0, 0, 0.6);
+  border-image: none;
+  border-style: solid;
+  border-width: 1px;
+  }
+
+.cero-cero, .cero-uno, .cero-dos, .uno-cero, .uno-uno, .uno-dos, .dos-cero, .dos-uno, .dos-dos {
+  box-shadow:
+  0 0 5px 2px rgba(12, 20, 25, 0.75),
+  0 0 2px 2px rgba(12, 20, 25, 0.75) inset;
+  }
+
+.uno-uno {
+  background-image: url('../img/letra_X1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #241e20;
+  /* background-color: #0e2431; */
+  }
+
+.dos-dos {
+  background-image: url('../img/letra_O1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #241e20;
+  }
+
+/* Corners radii decoration */
+.cero-cero {
+  border-top-left-radius: 2em;
+  }
+
+.cero-dos {
+  border-top-right-radius: 2em;
+  }
+
+.dos-cero {
+  border-bottom-left-radius: 2em;
+  }
+
+.dos-dos {
+  border-bottom-right-radius: 2em;
+  }
