@@ -8,4 +8,5 @@ app_name = 'apps.tictactoe'
 urlpatterns = [
     path('', views.HomeView.as_view(), name='home'),
     path('makemove', views.makemove, name='makemove'),
+    path('reset', views.reset, name='resetgame'),
 ]
