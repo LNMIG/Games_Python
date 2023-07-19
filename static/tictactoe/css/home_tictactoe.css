@@ -9,6 +9,7 @@ body {
   height: 100vh;
 
   background-image: url('../img/wallpaper_tictactoe.jpg');
+  /* background-image: url('../img/wallpaper_tictactoe_gears2.jpg'); */
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -62,6 +63,7 @@ body {
   border-width: 1px;
   }
 
+  /*
 .cero-cero, .cero-uno, .cero-dos, .uno-cero, .uno-uno, .uno-dos, .dos-cero, .dos-uno, .dos-dos {
   box-shadow:
   0 0 5px 2px rgba(12, 20, 25, 0.75),
@@ -74,7 +76,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #241e20;
-  /* background-color: #0e2431; */
   }
 
 .dos-dos {
@@ -83,21 +84,62 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #241e20;
-  }
+  } */
 
-/* Corners radii decoration */
-.cero-cero {
-  border-top-left-radius: 2em;
-  }
 
-.cero-dos {
-  border-top-right-radius: 2em;
-  }
-
-.dos-cero {
-  border-bottom-left-radius: 2em;
+/* 
+.uno-uno {
+  background-image: url('../img/letra_X2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #1e0000;
   }
 
 .dos-dos {
+  background-image: url('../img/letra_O2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #1e0000;
+  } */
+
+.middle-square {
+  box-shadow:
+  0 0 5px 2px rgba(12, 20, 25, 0.75),
+  0 0 2px 2px rgba(12, 20, 25, 0.75) inset;
+  }
+
+.square-w-x {
+  background-image: url('../img/letra_X2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #1e0000;
+  }
+
+.square-w-o {
+  background-image: url('../img/letra_O2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #1e0000;
+  }
+
+
+/* Corners radii decoration */
+.corner-left-top-square {
+  border-top-left-radius: 2em;
+  }
+
+.corner-right-top-square {
+  border-top-right-radius: 2em;
+  }
+
+.corner-left-bottom-square {
+  border-bottom-left-radius: 2em;
+  }
+
+.corner-right-bottom-square {
   border-bottom-right-radius: 2em;
   }

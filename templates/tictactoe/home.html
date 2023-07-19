@@ -30,23 +30,51 @@
   </header>
 
   <main>
+    <form
+      action="{% url 'apps.tictactoe:makemove' %}"
+      method="post"
+    >
+      {% csrf_token %}
       <div class="container p-0">
         <div class="row row-cols-3">
-          <div class="col px-sm-4 cero-cero"></div>
-          <div class="col px-sm-4 cero-uno"></div>
-          <div class="col px-sm-4 cero-dos"></div>
-          <div class="col px-sm-4 uno-cero"></div>
-          <div class="col px-sm-4 uno-uno"></div>
-          <div class="col px-sm-4 uno-dos"></div>
-          <div class="col px-sm-4 dos-cero"></div>
-          <div class="col px-sm-4 dos-uno"></div>
-          <div class="col px-sm-4 dos-dos"></div>
+
+          {% for each in tictactoe %}
+            <input
+              type="submit"
+              name="square"
+              value="{{ forloop.counter0 }}"
+              id="{{ forloop.counter0 }}"
+              class="col px-sm-4 middle-square
+                {% if forloop.counter0 == 0 %}
+                  corner-left-top-square
+                {% elif forloop.counter0 == 2 %}
+                  corner-right-top-square
+                {% elif forloop.counter0 == 6 %}
+                  corner-left-bottom-square
+                {% elif forloop.counter0 == 8 %}
+                  corner-right-bottom-square
+                {% else %}
+                  ''
+                {% endif %}
+                {% if each == 'X' %} square-w-x {% endif %}
+                {% if each == 'O' %} square-w-o {% endif %}"
+                style="color: transparent;"
+            >
+            </input>
+
+            {% empty %}
+            <h1>No records found</h1>
+          {% endfor %}
         </div>
       </div>
   </main>
 
   <footer>
-    <div class="tictactoe_footer"> TIC TACT TOE</div>
+    <div class="d-flex flex-row justify-content-between align-items-center px-2 tictactoe_footer">
+       <span class="h6">Python & Django</span>
+       <span>THE WINNER IS...</span>
+       <a class="h5 text-decoration-none" href={% url 'index' %}>Home</a>
+    </div>
   </footer>
 
 
