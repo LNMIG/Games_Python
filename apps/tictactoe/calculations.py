@@ -1,4 +1,4 @@
-from random import randrange
+from random import choice
 
 
 ##### SUBRUTINES #########################################################################################
@@ -10,6 +10,7 @@ def enter_move(board, move):
           aux = move
           row = aux // 3
           column = aux % 3
+
       if board[row][column] not in ['O', 'X']:
           board[row][column] = 'O'
           return True
@@ -18,8 +19,9 @@ def enter_move(board, move):
 
 
 def make_list_of_free_fields(board):
-      # This function returns a list with numbers one indicating emptiness or not of squares in the board.
-      free_squares = [1 for i in range(3) for j in range(3) if board[i][j] not in ['O','X'] ]
+      # This function returns a list with numbers indicating emptiness of the squares in the board.
+      global free_squares
+      free_squares = [ (i*3 + j) for i in range(3) for j in range(3) if board[i][j] not in ['O','X'] ]
       return free_squares
 
 
@@ -52,16 +54,11 @@ def victory_for(board):
 
 
 def draw_move(board):
-      # This function updates the board by selecting an square for the program.
-      while True:
-          move = randrange(8)
-          row = move // 3
-          column = move % 3
-          if board[row][column] not in ['O', 'X']:
-              board[row][column] = 'X'
-              break
-          else:
-            continue
+      # This function updates the board using program's choice/move.
+      move = choice(free_squares)
+      row = move // 3
+      column = move % 3
+      board[row][column] = 'X'
 
 ##########################################################################################################
 
@@ -75,9 +72,10 @@ def run(board, move):
       if isUserMoveOk and results == 'go-on':
           draw_move(board)
           results = victory_for(board)
+
           if results == 'go-on':
-            finished = ''
-            return (board, finished)
+              finished = ''
+              return (board, finished)
           elif results == 'program':
               finished = '¡¡  Program WINS  !!'
               return (board, finished)

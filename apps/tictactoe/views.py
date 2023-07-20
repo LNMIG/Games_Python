@@ -21,7 +21,7 @@ class HomeView(generic.ListView):
     template_name = 'tictactoe/home.html'
     context_object_name = 'tictactoe'
 
-    def get_queryset(self):        
+    def get_queryset(self):
         if len(tictactoe_final)==0:
             return tictactoe_initial
         else:
@@ -54,7 +54,7 @@ def makemove(request):
     if len(tictactoe_final) == 0:
         result = run(deepcopy(tictactoe_initial), move)
     else:
-        result = run(tictactoe_final, move)
+        result = run(deepcopy(tictactoe_final), move)
 
     # used when someone/program wins or draw
     if result[1] != '':
