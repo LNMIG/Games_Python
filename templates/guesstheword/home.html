@@ -1,0 +1,147 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es-ar">
+
+<head>
+  <title>Tic Tac Toe</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Custom CSS -->
+  <link href={% static 'guesstheword/css/home_guesstheword.css' %} rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <div class="guesstheword_header"> GUESS THE WORD</div>
+  </header>
+
+  <main>
+
+    <div class="container vw-100 m-0 p-0 d-flex flex-column justify-content-between align-items-center" style="height: 80vh; border: 1px solid green">
+
+      <div class="container vw-100" style="height: 50vh; border: 1px solid blue">
+        <section>
+
+        </section>
+
+        <section>
+
+        </section>
+      </div>
+
+      <form action="" method="post">
+
+        {% csrf_token %}
+        <div class="container vw-100 d-flex flex-column justify-content-center align-items-center" style="height: 20vh; border: 1px solid red">
+
+            {% for row in keyboard %}
+              <div class="row">
+                {% for each in row %}
+                  <input
+                    type="submit"
+                    name="key"
+                    value={{ each }}
+                    class="col px-sm-4"
+                    {% comment %} style="color: transparent; {% if blocked %}cursor:not-allowed{% endif %}" {% endcomment %}
+                    {% if blocked %} disabled {% endif %}
+                  >
+                  </input>
+                {% endfor %}
+              </div>
+                {% empty %}
+                  <h1>No keyword found</h1>
+
+            {% endfor %}
+        </div>
+      </form>
+    </div>
+
+    {% comment %} <form
+      action="{% url 'apps.tictactoe:makemove' %}"
+      method="post"
+    >
+      {% csrf_token %}
+      <div class="container p-0">
+        <div class="row row-cols-3">
+
+          {% for row in tictactoe %}
+            {% for each in row %}
+              <input
+                type="submit"
+                name="square"
+                value=
+                      {% if forloop.parentloop.counter0 == 0 %}
+                        {{ forloop.counter0 }}
+                      {% elif forloop.parentloop.counter0 == 1 %}
+                        {{ forloop.counter0|add:3 }}
+                      {% else %}
+                        {{ forloop.counter0|add:6 }}
+                      {% endif%}
+                class=
+                      "col px-sm-4 middle-square
+                      {% if forloop.parentloop.counter0 == 0 and forloop.counter0 == 0 %}corner-left-top-square
+                      {% elif forloop.parentloop.counter0 == 0 and forloop.counter0 == 2 %}corner-right-top-square
+                      {% elif forloop.parentloop.counter0 == 2 and forloop.counter0 == 0 %}corner-left-bottom-square
+                      {% elif forloop.parentloop.counter0 == 2 and forloop.counter0 == 2 %}corner-right-bottom-square
+                      {% else %}''
+                      {% endif %}
+                      {% if each == 'X' %} square-w-x {% endif %}
+                      {% if each == 'O' %} square-w-o {% endif %}
+                      "
+                      style="color: transparent; {% if blocked %}cursor:not-allowed{% endif %}"
+                {% if blocked %} disabled {% endif %}
+              >
+              </input>
+            {% endfor %}
+            
+            {% empty %}
+            <h1>No records found</h1>
+          {% endfor %}
+        </div>
+        {%if blocked %}
+            <div class="mt-3 h5 sm-h1 resetgame">
+              <a
+                href={% url 'apps.tictactoe:resetgame' %}
+                class="btn d-grid resetgame text-decoration-none">
+                RESET GAME
+              </a>
+            </div>
+        {% endif %}
+      </div> {% endcomment %}
+  </main>
+
+  <footer>
+    <div class="d-flex flex-row justify-content-between align-items-center px-2 guesstheword_footer">
+       <span class="h6 sm-h4">Python & Django</span>
+       <span class="h5 sm-h1">THE WINNER IS...</span>
+       {% comment %} <span class="h5 sm-h1">{% if blocked %}{{ winner }} {% else %} THE WINNER IS... {% endif %}</span> {% endcomment %}
+       <a class="h6 sm-h4 text-decoration-none" href={% url 'index' %}>Home</a>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
