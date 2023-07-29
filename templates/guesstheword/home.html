@@ -46,17 +46,16 @@
       <form action="" method="post">
 
         {% csrf_token %}
-        <div class="container vw-100 d-flex flex-column justify-content-center align-items-center" style="height: 20vh; border: 1px solid red">
+        <div class="container vw-100 d-flex flex-column justify-content-center align-items-center bg-keyboard" style="height: 20vh; border: 1px solid red">
 
             {% for row in keyboard %}
-              <div class="row">
+              <div class="w-75 w-sm-100 d-flex align-items-center justify-content-center row-cols-sm-{{row|length}}">
                 {% for each in row %}
                   <input
                     type="submit"
                     name="key"
                     value={{ each }}
-                    class="col px-sm-4"
-                    {% comment %} style="color: transparent; {% if blocked %}cursor:not-allowed{% endif %}" {% endcomment %}
+                    class="col-1 btn btn-secondary px-1 py-1 px-sm-4 mx-1 my-1 m-sm-1 d-flex align-items-center justify-content-center"
                     {% if blocked %} disabled {% endif %}
                   >
                   </input>
