@@ -27,8 +27,8 @@ handler404 = NotFoundView.as_view()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('tictactoe/', include('apps.tictactoe.urls')),
-    path('guesstheword/', include('apps.guesstheword.urls')),
+    path('', include('apps.tictactoe.urls')),
+    path('', include('apps.guesstheword.urls')),
 ]
 
 if settings.DEBUG:
