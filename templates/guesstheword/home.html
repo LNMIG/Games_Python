@@ -8,10 +8,13 @@
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
 
   <!-- Custom CSS -->
-  <link href={% static 'guesstheword/css/home_guesstheword.css' %} rel="stylesheet">
+  <link href={% static 'guesstheword/css/guesstheword.css' %} rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -56,7 +59,9 @@
                     name="key"
                     value={{ each }}
                     class="col-1 btn btn-secondary px-1 py-1 px-sm-4 mx-1 my-1 m-sm-1 d-flex align-items-center justify-content-center"
-                    {% if blocked %} disabled {% endif %}
+                    style="cursor:not-allowed"
+                    {% comment %} {% if blocked %} disabled {% endif %} {% endcomment %}
+                    disabled
                   >
                   </input>
                 {% endfor %}
@@ -124,7 +129,7 @@
   </main>
 
   <footer>
-    <div class="d-flex flex-row justify-content-between align-items-center px-2 guesstheword_footer">
+    <div class="guesstheword_footer d-flex flex-row justify-content-between align-items-center px-2">
        <span class="h6 sm-h4">Python & Django</span>
        <span class="h5 sm-h1">THE WINNER IS...</span>
        {% comment %} <span class="h5 sm-h1">{% if blocked %}{{ winner }} {% else %} THE WINNER IS... {% endif %}</span> {% endcomment %}
