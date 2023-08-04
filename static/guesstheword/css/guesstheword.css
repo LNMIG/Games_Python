@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: 'Roboto', sans-serif;
+  }
+
+.guesstheword_header, .guesstheword_footer {
+  width: 100vw;
+  height: 7vh;
+  background-color: #bd512f;
+
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  }
+
+.bg-keyboard {
+  background-color: #ffffff;
+  background-image: var(--bs-gradient);
+}
