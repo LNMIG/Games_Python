@@ -4,21 +4,69 @@ from django.urls import reverse
 from django.views import generic
 from copy import deepcopy
 
+from .keyboard import keyboard_keys
+from .main import run_main
+
 
 # GLOBAL VARs goes here.
-guesstheword_keyboard = [['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],['A', 'S', 'D', 'F','G', 'H', 'J', 'K', 'L'],['Z', 'X', 'C', 'V', 'B', 'N', 'M']]
+chosen_word_list = ''
+letter_index_dict = ''
+chosen_word_list_underscores = ''
+keyboard = ''
 
 
 # VIEWS goes here.
 class HomeView(generic.ListView):
     template_name = 'guesstheword/home.html'
-    context_object_name = 'guesstheword'
 
     def get_queryset(self):
-        return
+        global chosen_word_list
+        global letter_index_dict
+        global chosen_word_list_underscores
+        global keyboard
+
+        chosen_parameters = run_main()
+        chosen_word_list = chosen_parameters[0] if not chosen_word_list else chosen_word_list
+        print('Estoy en queryset 1',chosen_word_list)
+        letter_index_dict = chosen_parameters[2] if not letter_index_dict else letter_index_dict
+        print('Estoy en queryset 2',letter_index_dict)
+        chosen_word_list_underscores = chosen_parameters[1] if not chosen_word_list_underscores else chosen_word_list_underscores
+        print('Estoy en queryset 3', chosen_word_list_underscores)
+        keyboard = keyboard_keys()
+        return chosen_word_list_underscores
 
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)
-        context['keyboard'] = guesstheword_keyboard
+        context['guesstheword'] = chosen_word_list_underscores
+        print('Estoy en context_data', chosen_word_list_underscores)
+        context['keyboard'] = keyboard
         return context
+
+    def post(self, request, *args, **kwargs):
+        # get the user selection
+        key_selected = request.POST['key']
+        # create an object_list for HomeView
+        self.object_list = chosen_word_list_underscores
+        print('Estoy en POST', key_selected)
+        # get the context
+        context = super().get_context_data(**kwargs)
+
+        # check if the selected key=letter is in chosen word
+        if key_selected in chosen_word_list:
+            for idx in letter_index_dict[key_selected]:
+                chosen_word_list_underscores[idx] = key_selected
+
+        if "_" not in chosen_word_list_underscores:
+            print('Nuevo contexto guesstheword', chosen_word_list_underscores)
+            context['guesstheword'] = chosen_word_list_underscores
+            context['keyboard'] = keyboard
+            context['solved'] = 'Well done! You guessed the word!'
+        else:
+            context['guesstheword'] = chosen_word_list_underscores
+            context['keyboard'] = keyboard
+
+        return self.render_to_response(context)
+
+
+
 

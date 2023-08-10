@@ -4,7 +4,7 @@
 <html lang="es-ar">
 
 <head>
-  <title>Tic Tac Toe</title>
+  <title>Guess the Word</title>
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -34,22 +34,36 @@
 
   <main>
 
-    <div class="container vw-100 m-0 p-0 d-flex flex-column justify-content-between align-items-center" style="height: 80vh; border: 1px solid green">
+    <div class="container vw-100 m-0 p-0 d-flex flex-column justify-content-between align-items-center" style="height: 80vh;">
 
       <div class="container vw-100" style="height: 50vh; border: 1px solid blue">
-        <section>
-
-        </section>
+          <ol class="row justify-content-between align-items-center" style="width: 100%; height: 30%;">
+            {% for letter in guesstheword %}
+              <li
+                  class="col h-100 m-2 p-2 btn btn-warning fs-1 fw-bold text-uppercase d-flex justify-content-center align-items-center"
+              >
+                {{ letter }}
+              </li>
+            {% empty %}
+              <span>No word list found</span>
+            {% endfor %}
+          </ol>
 
         <section>
 
         </section>
       </div>
 
-      <form action="" method="post">
+      <form
+          action="{% url 'apps.guesstheword:home' %}"
+          method="post"
+      >
 
         {% csrf_token %}
-        <div class="container vw-100 d-flex flex-column justify-content-center align-items-center bg-keyboard" style="height: 20vh; border: 1px solid red">
+        <div
+            class="container vw-100 d-flex flex-column justify-content-center align-items-center bg-keyboard"
+            style="height: 20vh; border: 1px solid red"
+        >
 
             {% for row in keyboard %}
               <div class="w-75 w-sm-100 d-flex align-items-center justify-content-center row-cols-sm-{{row|length}}">
@@ -59,9 +73,9 @@
                     name="key"
                     value={{ each }}
                     class="col-1 btn btn-secondary px-1 py-1 px-sm-4 mx-1 my-1 m-sm-1 d-flex align-items-center justify-content-center"
-                    style="cursor:not-allowed"
+                    {% comment %} style="cursor:not-allowed" {% endcomment %}
                     {% comment %} {% if blocked %} disabled {% endif %} {% endcomment %}
-                    disabled
+                    {% comment %} disabled {% endcomment %}
                   >
                   </input>
                 {% endfor %}
