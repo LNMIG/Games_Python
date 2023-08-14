@@ -35,43 +35,34 @@
   <main>
     <div class="container vw-100 m-0 p-0 d-flex flex-column justify-content-between align-items-center" style="height: 80vh;">
 
-      <div class="container vw-100 bg-dark rounded-3" style="height: 50vh;">
-          <ol class="row justify-content-between align-items-center" style="width: 100%; height: 30%;">
-            {% for letter in guesstheword %}
-              <li
-                  class="col h-100 m-2 p-2 btn btn-warning fs-1 fw-bold text-uppercase d-flex justify-content-center align-items-center"
-              >
-                {{ letter }}
-              </li>
-            {% empty %}
-              <span>No word list found</span>
-            {% endfor %}
+      <div class="container vw-100 bg-dark rounded-3 d-flex flex-column justify-content-between align-items-center" style="height: 50vh;">
+          {% comment %} Show the word {% endcomment %}
+          <ol class="row justify-content-between align-items-center m-0 p-0 my-1" style="width: 100%; height: 50%;">
+              {% for letter in guesstheword %}
+                <li
+                    class="col mx-2 mt-3 p-0 btn btn-warning fs-1 fw-bold text-uppercase d-flex justify-content-center align-items-center"
+                >
+                  {{ letter }}
+                </li>
+              {% empty %}
+                <span>No word list found</span>
+              {% endfor %}
           </ol>
-
-        <section style="">
-
-        </section>
+          {% comment %} Show the word's definition {% endcomment %}
+          <div class="card overflow-auto text-white bg-dark m-0 p-0 mx-2 mb-1" style="width: 100%; height: 40%; margin: 0 1.5rem 0 1.65rem;" >
+              <div class="card-header fw-bold">Definition</div>
+              <div class="card-body">
+                <p class="card-text text-wrap fst-italic">{{ worddefinition }}</p>
+              </div>
+          </div>
       </div>
 
+      {% comment %} Show message if task completed {% endcomment %}
       {%if solved %}
-        <form
-            action="{% url 'apps.guesstheword:home' %}"
-            method="post"
-        >
-          {% csrf_token %}
-
-          <div class="mt-3 h5 sm-h1 border-rounded">
-            <input
-              type="submit"
-              name="key"
-              value="RESET THE GAME"
-              class="btn btn-outline-warning btn-lg d-grid"
-            >
-            </input>
-          </div>
-        </form>
+        <span class="btn btn-success w-100 h5 sm-h1 disabled">{{ solved }} - <i>reset a word or go home</i></span>
       {% endif %}
 
+      {% comment %} Show keyboard {% endcomment %}
       <form
           action="{% url 'apps.guesstheword:home' %}"
           method="post"
@@ -90,7 +81,7 @@
                     type="submit"
                     name="key"
                     value={{ each }}
-                    class="col-1 btn btn-secondary px-1 py-1 px-sm-4 mx-1 my-1 m-sm-1 d-flex align-items-center justify-content-center"
+                    class="col-1 col-sm-1 btn {% if forloop.parentloop.last %}btn-primary{% else %}btn-secondary{% endif %} px-1 py-1 px-sm-4 mx-1 my-1 m-sm-1 d-flex align-items-center justify-content-center"
                     style="{% if solved %}cursor:not-allowed{% endif %}"
                     {% if solved %} disabled {% endif %}
                   >
@@ -108,8 +99,14 @@
   <footer>
     <div class="guesstheword_footer d-flex flex-row justify-content-between align-items-center px-2">
        <span class="h6 sm-h4">Python & Django</span>
-       <span class="h5 sm-h1">{% if solved %}{{ solved }} {% else %} ... {% endif %}</span>
-       <a class="h6 sm-h4 text-decoration-none" href={% url 'index' %}>Home</a>
+       <span class="d-flex flex-row justify-content-end align-items-center">
+          {% if solved %}
+            <a class="btn btn-outline-warning h6 sm-h4 text-decoration-none" href={% url 'apps.guesstheword:resetword' %}>ResetWord</a>
+            <a class="btn btn-outline-warning h6 sm-h4 text-decoration-none" href={% url 'index' %}>Home</a>
+          {% else %}
+            <a class="h6 sm-h4 text-decoration-none" href={% url 'index' %}>Home</a>
+          {% endif %}
+       </span>
     </div>
   </footer>
 

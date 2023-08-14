@@ -1,171 +1,171 @@
-crema
-café
-estrella
-explosión
-guitarra
-plástico
-navaja
-martillo
-libros
-lápiz
-lapicera
-aluminio
-embarcación
-letra
-agujeta
-ventana
-librería
-sonido
-universidad
-rueda
-perro
-llaves
-camisa
-pelo
-papá
-sillón
-felicidad
-catre
-teclado
-servilleta
-escuela
-pantalla
-sol
-codo
-tenedor
-estadística
-mapa
-agua
-mensaje
-lima
-cohete
-rey
-edificio
-césped
-presidencia
-hojas
-parlante
-colegio
-granizo
-pestaña
-lámpara
-mano
-monitor
-flor
-música
-hombre
-tornillo
-habitación
-velero
-abuela
-abuelo
-palo
-satélite
-templo
-lentes
-bolígrafo
-plato
-nube
-gobierno
-botella
-castillo
-enano
-casa
-libro
-persona
-planeta
-televisor
-guantes
-metal
-teléfono
-proyector
-mono
-remera
-muela
-petróleo
-percha
-remate
-debate
-anillo
-cuaderno
-ruido
-pared
-taladro
-herramienta
-cartas
-chocolate
-anteojos
-impresora
-caramelos
-living
-luces
-angustia
-zapato
-bomba
-lluvia
-ojo
-corbata
-periódico
-diente
-planta
-chupetín
-buzo
-oficina
-persiana
-puerta
-tío
-silla
-ensalada
-pradera
-zoológico
-candidato
-deporte
-recipiente
-diarios
-fotografía
-ave
-hierro
-refugio
-pantalón
-barco
-carne
-nieve
-tecla
-humedad
-pistola
-departamento
-celular
-tristeza
-hipopótamo
-sofá
-cama
-árbol
-mesada
-campera
-discurso
-auto
-cinturón
-rúcula
-famoso
-madera
-lentejas
-piso
-maletín
-reloj
-diputado
-cuchillo
-desodorante
-candado
-luz
-montañas
-computadora
-radio
-moño
-cuadro
-calor
-partido
-teatro
-bife
-fiesta
-bala
-auriculares
+crema | 123
+café | 123
+estrella | 123
+explosión | 123
+guitarra | 123
+plástico | 123
+navaja | 123
+martillo | 123
+libros | 123
+lápiz | 123
+lapicera | 123
+aluminio | 123
+embarcación | 123
+letra | 123
+agujeta | 123
+ventana | 123
+librería | 123
+sonido | 123
+universidad | 123
+rueda | 123
+perro | 123
+llaves | 123
+camisa | 123
+pelo | 123
+papá | 123
+sillón | 123
+felicidad | 123
+catre | 123
+teclado | 123
+servilleta | 123
+escuela | 123
+pantalla | 123
+sol | 123
+codo | 123
+tenedor | 123
+estadística | 123
+mapa | 123
+agua | 123
+mensaje | 123
+lima | 123
+cohete | 123
+rey | 123
+edificio | 123
+césped | 123
+presidencia | 123
+hojas | 123
+parlante | 123
+colegio | 123
+granizo | 123
+pestaña | 123
+lámpara | 123
+mano | 123
+monitor | 123
+flor | 123
+música | 123
+hombre | 123
+tornillo | 123
+habitación | 123
+velero | 123
+abuela | 123
+abuelo | 123
+palo | 123
+satélite | 123
+templo | 123
+lentes | 123
+bolígrafo | 123
+plato | 123
+nube | 123
+gobierno | 123
+botella | 123
+castillo | 123
+enano | 123
+casa | 123
+libro | 123
+persona | 123
+planeta | 123
+televisor | 123
+guantes | 123
+metal | 123
+teléfono | 123
+proyector | 123
+mono | 123
+remera | 123
+muela | 123
+petróleo | 123
+percha | 123
+remate | 123
+debate | 123
+anillo | 123
+cuaderno | 123
+ruido | 123
+pared | 123
+taladro | 123
+herramienta | 123
+cartas | 123
+chocolate | 123
+anteojos | 123
+impresora | 123
+caramelos | 123
+living | 123
+luces | 123
+angustia | 123
+zapato | 123
+bomba | 123
+lluvia | 123
+ojo | 123
+corbata | 123
+periódico | 123
+diente | 123
+planta | 123
+chupetín | 123
+buzo | 123
+oficina | 123
+persiana | 123
+puerta | 123
+tío | 123
+silla | 123
+ensalada | 123
+pradera | 123
+zoológico | 123
+candidato | 123
+deporte | 123
+recipiente | 123
+diarios | 123
+fotografía | 123
+ave | 123
+hierro | 123
+refugio | 123
+pantalón | 123
+barco | 123
+carne | 123
+nieve | 123
+tecla | 123
+humedad | 123
+pistola | 123
+departamento | 123
+celular | 123
+tristeza | 123
+hipopótamo | 123
+sofá | 123
+cama | 123
+árbol | 123
+mesada | 123
+campera | 123
+discurso | 123
+auto | 123
+cinturón | 123
+rúcula | 123
+famoso | 123
+madera | 123
+lentejas | 123
+piso | 123
+maletín | 123
+reloj | 123
+diputado | 123
+cuchillo | 123
+desodorante | 123
+candado | 123
+luz | 123
+montañas | 123
+computadora | 123
+radio | 123
+moño | 123
+cuadro | 123
+calor | 123
+partido | 123
+teatro | 123
+bife | 123
+fiesta | 123
+bala | 123
+auriculares | 123
