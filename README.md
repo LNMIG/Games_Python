@@ -6,6 +6,10 @@
 ## Tic-Tac-Toe game screenshot
 ![2023-07-20 (1)](https://github.com/LNMIG/Games_Python/assets/96741070/4ec6de52-343f-427c-b134-ff66e719f502)
 
+## Guess The Word game screenshot
+![2023-08-16 (1)](https://github.com/LNMIG/Games_Python/assets/96741070/c379ba5b-58a4-465a-a65f-7e8494841dfc)
+
+
 ## Project's Goals
 - Build Apps using **Django** which will allow you spend good time playing simple games.
 - Use and practice concepts learned about Python and Django.
