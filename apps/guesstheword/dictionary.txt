@@ -1,171 +1,100 @@
-crema | 123
-café | 123
-estrella | 123
-explosión | 123
-guitarra | 123
-plástico | 123
-navaja | 123
-martillo | 123
-libros | 123
-lápiz | 123
-lapicera | 123
-aluminio | 123
-embarcación | 123
-letra | 123
-agujeta | 123
-ventana | 123
-librería | 123
-sonido | 123
-universidad | 123
-rueda | 123
-perro | 123
-llaves | 123
-camisa | 123
-pelo | 123
-papá | 123
-sillón | 123
-felicidad | 123
-catre | 123
-teclado | 123
-servilleta | 123
-escuela | 123
-pantalla | 123
-sol | 123
-codo | 123
-tenedor | 123
-estadística | 123
-mapa | 123
-agua | 123
-mensaje | 123
-lima | 123
-cohete | 123
-rey | 123
-edificio | 123
-césped | 123
-presidencia | 123
-hojas | 123
-parlante | 123
-colegio | 123
-granizo | 123
-pestaña | 123
-lámpara | 123
-mano | 123
-monitor | 123
-flor | 123
-música | 123
-hombre | 123
-tornillo | 123
-habitación | 123
-velero | 123
-abuela | 123
-abuelo | 123
-palo | 123
-satélite | 123
-templo | 123
-lentes | 123
-bolígrafo | 123
-plato | 123
-nube | 123
-gobierno | 123
-botella | 123
-castillo | 123
-enano | 123
-casa | 123
-libro | 123
-persona | 123
-planeta | 123
-televisor | 123
-guantes | 123
-metal | 123
-teléfono | 123
-proyector | 123
-mono | 123
-remera | 123
-muela | 123
-petróleo | 123
-percha | 123
-remate | 123
-debate | 123
-anillo | 123
-cuaderno | 123
-ruido | 123
-pared | 123
-taladro | 123
-herramienta | 123
-cartas | 123
-chocolate | 123
-anteojos | 123
-impresora | 123
-caramelos | 123
-living | 123
-luces | 123
-angustia | 123
-zapato | 123
-bomba | 123
-lluvia | 123
-ojo | 123
-corbata | 123
-periódico | 123
-diente | 123
-planta | 123
-chupetín | 123
-buzo | 123
-oficina | 123
-persiana | 123
-puerta | 123
-tío | 123
-silla | 123
-ensalada | 123
-pradera | 123
-zoológico | 123
-candidato | 123
-deporte | 123
-recipiente | 123
-diarios | 123
-fotografía | 123
-ave | 123
-hierro | 123
-refugio | 123
-pantalón | 123
-barco | 123
-carne | 123
-nieve | 123
-tecla | 123
-humedad | 123
-pistola | 123
-departamento | 123
-celular | 123
-tristeza | 123
-hipopótamo | 123
-sofá | 123
-cama | 123
-árbol | 123
-mesada | 123
-campera | 123
-discurso | 123
-auto | 123
-cinturón | 123
-rúcula | 123
-famoso | 123
-madera | 123
-lentejas | 123
-piso | 123
-maletín | 123
-reloj | 123
-diputado | 123
-cuchillo | 123
-desodorante | 123
-candado | 123
-luz | 123
-montañas | 123
-computadora | 123
-radio | 123
-moño | 123
-cuadro | 123
-calor | 123
-partido | 123
-teatro | 123
-bife | 123
-fiesta | 123
-bala | 123
-auriculares | 123
+crema | f. Producto cosmético o medicinal de consistencia pastosa que se aplica generalmente sobre la piel.
+café | m. Bebida que se hace por infusión con la semilla tostada y molida del cafeto.
+estrella | f. Cada uno de los cuerpos celestes que brillan en la noche con luz propia.
+explosión | f. Liberación brusca de energía que produce un incremento rápido de la presión, con desprendimiento de calor, luz y gases, y va acompañada de estruendo y rotura violenta del cuerpo que la contiene.
+guitarra | f. Instrumento musical de cuerda compuesto por una caja de resonancia en forma de ocho, un mástil largo con trastes, y cuerdas, generalmente seis, que se hacen sonar con los dedos.
+plástico | adj. Dicho de ciertos materiales sintéticos: Que pueden moldearse fácilmente y están compuestos principalmente por polímeros, como la celulosa.
+navaja | f. Cuchillo cuya hoja puede doblarse sobre el mango para que el filo quede guardado entre las dos cachas o en una hendidura a propósito.
+martillo | m. Herramienta de percusión compuesta de una cabeza, por lo común de hierro, y un mango, generalmente de madera.
+libros | m. pl. Conjunto de muchas hojas de papel u otro material semejante que, encuadernadas, forman un volumen.
+lápiz | m. Utensilio para escribir o dibujar formado por un cilindro o prisma de madera con una barra de grafito en su interior.
+lapicera | f. Arg., Bol. y Ur. Pluma de escribir que lleva incorporado un depósito recargable o un cartucho para la tinta.
+aluminio | m. Elemento químico metálico, de núm. atóm. 13, de color similar al de la plata, ligero, resistente y dúctil, muy abundante en la corteza terrestre, que tiene diversas aplicaciones industriales. (Símb. Al).
+embarcación | f. Vehículo capaz de navegar por el agua propulsado por remo, vela o motor.
+letra | f. Cada uno de los signos gráficos que componen el alfabeto de un idioma.
+agujeta | f. Correa o cinta para sujetar algunas prendas de vestir.
+ventana | f. Abertura en un muro o pared donde se coloca un elemento y que sirve generalmente para mirar y dar luz y ventilación.
+librería | f. Tienda donde se venden libros.
+sonido | m. Sensación producida en el órgano del oído por el movimiento vibratorio de los cuerpos, transmitido por un medio elástico, como el aire.
+universidad | f. Institución de enseñanza superior que comprende diversas facultades, y que confiere los grados académicos correspondientes. Según las épocas y países puede comprender colegios, institutos, departamentos, centros de investigación, escuelas profesionales, etc. Universidad de Salamanca, universidades populares.
+rueda | f. Pieza mecánica en forma de disco que gira alrededor de un eje.
+perro | m. y f. Mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño.
+llaves | f. Instrumento, comúnmente metálico, que, introducido en una cerradura, permite activar el mecanismo que la abre y la cierra.
+camisa | f. Prenda de vestir de tela que cubre el torso, abotonada por delante, generalmente con cuello y mangas.
+pelo | m. Filamento cilíndrico, delgado, de naturaleza córnea, que nace y crece en la piel de algunos animales, especialmente los mamíferos.
+papá | m. coloq. padre (varón).
+sillón | m. Silla de brazos, mayor y más cómoda que la ordinaria.
+felicidad | 1. f. Estado de grata satisfacción espiritual y física. 2. f. Persona, situación, objeto o conjunto de ellos que contribuyen a hacer feliz. Mi familia es mi felicidad.
+catre | m. Cama ligera para una sola persona.
+teclado | m. Conjunto de las teclas, los botones u otros dispositivos táctiles con los que se manejan diversos aparatos o máquinas.
+servilleta | f. Pieza de tela o papel que usa cada comensal para limpiarse los labios y las manos.
+escuela | f. Establecimiento o institución donde se dan o se reciben ciertos tipos de instrucción.
+pantalla | 1. f. Lámina que se sujeta delante o alrededor de un foco luminoso artificial, para que la luz no moleste a los ojos o para dirigirla hacia donde se quiera. 2. f. En ciertos aparatos electrónicos, superficie donde aparecen imágenes.
+sol | m. Estrella luminosa, centro del sistema planetario en que está situada la Tierra.
+codo | m. Parte posterior y prominente de la articulación del brazo con el antebrazo.
+tenedor | m. Instrumento de mesa en forma de horca, con dos o más púas y que sirve para comer alimentos sólidos.
+estadística | 1. f. Estudio de los datos cuantitativos de la población, de los recursos naturales e industriales, del tráfico o de cualquier otra manifestación de las sociedades humanas. 2.f. Rama de la matemática que utiliza grandes conjuntos de datos numéricos para obtener inferencias basadas en el cálculo de probabilidades.
+mapa | m. Representación geográfica de la Tierra o parte de ella en una superficie plana.
+agua | f. Líquido transparente, incoloro, inodoro e insípido en estado puro, cuyas moléculas están formadas por dos átomos de hidrógeno y uno de oxígeno, y que constituye el componente más abundante de la superficie terrestre y el mayoritario de todos los organismos vivos. (Fórm. H2O).
+mensaje | m. Recado que envía alguien a otra persona.
+lima | f. Fruto del limero, de forma esferoidal aplanada y de unos cinco centímetros de diámetro, pezón bien saliente de la base, corteza lisa y amarilla, y pulpa verdosa, dividida en gajos, comestible, jugosa y de sabor algo dulce.
+cohete | 1. m. Fuego de artificio que consta de un canuto resistente cargado de pólvora y adherido al extremo de una varilla ligera. Encendida la mecha que va en la parte inferior del canuto, la reacción que producen los gases expulsados le imprime un rápido movimiento hacia la altura, donde estalla con fuerte estampido. 2. m. Artefacto que se mueve en el espacio por propulsión a chorro y que se puede emplear como arma de guerra o como instrumento de investigación científica.
+rey | m. y f. Monarca soberano de un reino.
+edificio | m. Construcción estable, hecha con materiales resistentes, para ser habitada o para otros usos.
+césped | m. Hierba menuda y tupida que cubre el suelo.
+presidencia | 1. f. Dignidad, empleo o cargo de presidente. 2. f. Acción de presidir.
+hojas | f. Cada una de las láminas, generalmente verdes, planas y delgadas, de que se visten los vegetales, unidas al tallo o a las ramas por el pecíolo o, a veces, por una parte basal alargada, en las que principalmente se realizan las funciones de transpiración y fotosíntesis.
+parlante | m. Am. Mer., C. Rica, El Salv. y Nic. altavoz (aparato que transforma la corriente eléctrica en sonido).
+colegio | m. Establecimiento de enseñanza para niños y jóvenes.
+granizo | m. Agua congelada que desciende con violencia de las nubes, en granos más o menos duros y gruesos, pero no en copos como la nieve.
+pestaña | f. Cada uno de los pelos que hay en los bordes de los párpados, para defensa de los ojos.
+lámpara |  f. Utensilio o aparato que, colgado o sostenido sobre un pie, sirve de soporte a una o varias luces artificiales.
+mano | f. Parte del cuerpo humano unida a la extremidad del antebrazo y que comprende desde la muñeca inclusive hasta la punta de los dedos.
+monitor | m. Aparato electrónico que, a través de señales visuales o acústicas, permite hacer el seguimiento de un proceso o un fenómeno.
+flor | f. Brote de muchas plantas, formado por hojas de colores, del que se formará el fruto.
+música | f. Arte de combinar los sonidos de la voz humana o de los instrumentos, o de unos y otros a la vez, de suerte que produzcan deleite, conmoviendo la sensibilidad, ya sea alegre, ya tristemente.
+hombre | m. Varón que tiene las cualidades consideradas masculinas por excelencia.
+tornillo | m. Pieza cilíndrica o cónica, por lo general metálica, con resalte en hélice y cabeza apropiada para enroscarla.
+habitación | f. En una vivienda, cada uno de los espacios entre tabiques destinados a dormir, comer, etc.
+velero | m. Barco de vela.
+abuela | f. Madre de uno de los padres de una persona.
+abuelo | m. Padre de uno de los padres de una persona.
+palo | m. Pieza de madera u otro material, mucho más larga que gruesa, generalmente cilíndrica y fácil de manejar.
+satélite | m. Astron. Cuerpo celeste opaco que solo brilla por la luz refleja del Sol y gira alrededor de un planeta.
+templo | m. Edificio o lugar destinado pública y exclusivamente a un culto.
+lentes | m. o f. lente provista de armadura que se coloca cerca del ojo para corregir defectos de la visión. U. m. en pl.
+bolígrafo | m. Instrumento para escribir que tiene en su interior un tubo de tinta especial y, en la punta, una bolita metálica que gira libremente.
+plato | m. Recipiente bajo y generalmente redondo, con una concavidad en medio y borde comúnmente plano alrededor, empleado para servir los alimentos y comer en él y para otros usos.
+nube | f. Agregado visible de minúsculas gotitas de agua, de cristales de hielo o de ambos, suspendido en la atmósfera y producido por la condensación de vapor de agua.
+gobierno | m. Órgano superior del poder ejecutivo de un Estado o de una comunidad política, constituido por el presidente y los ministros o consejeros.
+botella | f. Recipiente de cristal, vidrio, plástico u otro material, con el cuello estrecho, que sirve para contener líquidos.
+castillo | m. Lugar fuerte, cercado de murallas, baluartes, fosos y otras fortificaciones.
+enano | adj. Dicho de un ser vivo o de una cosa: Diminuto en su clase o especie.
+casa | f. Edificio de una o pocas plantas destinado a vivienda unifamiliar, en oposición a piso.
+libro | m. Conjunto de muchas hojas de papel u otro material semejante que, encuadernadas, forman un volumen.
+persona | f. Individuo de la especie humana.
+planeta | m. Cuerpo celeste sin luz propia que gira en una órbita elíptica alrededor de una estrella, en particular los que giran alrededor del Sol: Mercurio, Venus, la Tierra, Marte, Júpiter, Saturno, Urano, Neptuno y Plutón.
+televisor | m. Aparato receptor de televisión.
+guantes | m. Prenda para cubrir la mano, que se hace, por lo común, de piel, tela o tejido de punto, y tiene una funda para cada dedo.
+metal | m. Quím. Cada uno de los elementos químicos buenos conductores del calor y de la electricidad, con un brillo característico, sólidos a temperatura ordinaria, salvo el mercurio, y que en sus sales en disolución forman iones electropositivos o cationes.
+teléfono | m. Conjunto de aparatos e hilos conductores con los cuales se transmite a distancia la palabra y toda clase de sonidos por la acción de la electricidad.
+proyector | m. Aparato que sirve para proyectar imágenes ópticas fijas o en movimiento.
+mono | m. y f. Animal del suborden de los simios.
+muela | f. Cada uno de los dientes posteriores a los caninos y que sirven para moler o triturar los alimentos.
+petróleo | m. Líquido natural oleaginoso e inflamable, constituido por una mezcla de hidrocarburos, que se extrae de lechos geológicos continentales o marítimos y del que se obtienen productos utilizables con fines energéticos o industriales, como la gasolina, el queroseno o el gasóleo.
+percha | f. Utensilio ligero que consta de un soporte donde se cuelga un traje u otra prenda parecida y que tiene en su parte superior un gancho para suspenderlo de una barra.
+remate | m. Acción de rematar.
+debate | m. controversia (discusión).
+anillo | m. Aro de metal u otra materia, liso o con labores, y con perlas o piedras preciosas o sin ellas, que se lleva, principalmente por adorno, en los dedos de la mano.
+cuaderno | m. Conjunto o agregado de algunos pliegos de papel, doblados y cosidos en forma de libro.
+ruido | m. Sonido inarticulado, por lo general desagradable.
+pared | f. Obra de albañilería vertical, que cierra o limita un espacio.
+taladro | m. Herramienta aguda o cortante con que se agujerea la madera u otra cosa.
+herramienta | f. Instrumento, por lo común de hierro o acero, con que trabajan los artesanos.
+cartas | f. Papel escrito, y ordinariamente cerrado, que una persona envía a otra para comunicarse con ella.
+chocolate | m. Pasta hecha con cacao y azúcar molidos, a la que generalmente se añade canela o vainilla.
+anteojos | m. Instrumento óptico que, mediante un tubo con dos lentes situadas en sus extremos, amplía las imágenes de los objetos lejanos.
+impresora | f. Máquina que, conectada a una computadora u otro dispositivo electrónico, imprime los resultados de las operaciones.
+caramelos | m. Azúcar fundido y endurecido.
+living | m. cuarto de estar.
+zapato | m. Calzado que no pasa del tobillo, con la parte inferior de suela y lo demás de piel, fieltro, paño u otro tejido, más o menos escotado por el empeine.

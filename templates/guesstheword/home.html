@@ -59,7 +59,11 @@
 
       {% comment %} Show message if task completed {% endcomment %}
       {%if solved %}
-        <span class="btn btn-success w-100 h5 sm-h1 disabled">{{ solved }} - <i>reset a word or go home</i></span>
+        <span
+            class="btn btn-success w-75 h5 sm-h1 mt-1"
+            style="border: 2px solid white">
+            {{ solved }} - <i>reset a word or go home</i>
+        </span>
       {% endif %}
 
       {% comment %} Show keyboard {% endcomment %}
@@ -71,7 +75,7 @@
         {% csrf_token %}
         <div
             class="container vw-100 d-flex flex-column justify-content-center align-items-center bg-keyboard"
-            style="height: 20vh;"
+            style=""
         >
 
             {% for row in keyboard %}
@@ -82,7 +86,7 @@
                     name="key"
                     value={{ each }}
                     class="col-1 col-sm-1 btn {% if forloop.parentloop.last %}btn-primary{% else %}btn-secondary{% endif %} px-1 py-1 px-sm-4 mx-1 my-1 m-sm-1 d-flex align-items-center justify-content-center"
-                    style="{% if solved %}cursor:not-allowed{% endif %}"
+                    style="border: 2px solid white; {% if solved %}cursor:not-allowed{% endif %}"
                     {% if solved %} disabled {% endif %}
                   >
                   </input>

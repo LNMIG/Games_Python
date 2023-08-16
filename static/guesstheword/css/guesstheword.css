@@ -8,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
 
-  background-image: url('');
+  background-image: url('../img/abecedario.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,6 +27,7 @@ body {
   width: 100vw;
   height: 7vh;
   background-color: #283149;
+  background-image: var(--bs-gradient);
 
   font-size: 2em;
   font-weight: 700;
@@ -35,6 +36,11 @@ body {
   }
 
 .bg-keyboard {
-  background-color: #ffffff;
-  background-image: var(--bs-gradient);
+  background-color:transparent;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-image: url('../img/sopamedia.jpg');
+  }
 }
